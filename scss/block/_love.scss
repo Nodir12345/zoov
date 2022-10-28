@@ -1,0 +1,81 @@
+.box-love{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF4F3;
+  padding: 80px 20px;
+  padding-right: 40px;
+  margin-top: 180px;
+}
+.love-content-title{
+font-weight: 700;
+font-size: 46px;
+line-height: 130%;
+letter-spacing: 0.02em;
+margin-bottom: 40px;
+font-family: $font;
+}
+.love-content-text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: #434242;
+margin-bottom: 20px;
+max-width: 510px;
+}
+.love_img{
+  max-width: 556px;
+
+}
+@media screen and (max-width:1220px){
+  .box-love{
+    flex-direction: column;
+  }
+  .love-content-title{
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width:600px){
+  .love_img{
+    max-width: 300px;
+  
+  }
+  .love-content-title{
+    font-size: 38px;
+  }
+  .love-content-text{
+      font-size: 12px;
+    }
+}
+.pochimu-content__list5::before{
+  content: "";
+  background-image: url("../../img/sevda5.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+.pochimu-content__list6::before{
+  content: "";
+  background-image: url("../../img/sevda6.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+.pochimu-content__list7::before{
+  content: "";
+  background-image: url("../../img/pochimu__sevda3.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+.pochimu-content__list8::before{
+  content: "";
+  background-image: url("../../img/sevda8.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
