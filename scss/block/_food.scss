@@ -1,0 +1,157 @@
+.site-food{
+
+  background-image: url("../img/zoov.svg"),url("../img/kucu.jpg");
+  background-size: 168px auto, cover;
+  height: 800px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+margin-right: auto;
+background-position: right bottom 92px, center;
+padding: 225px 120px;
+
+}
+.food_content{
+  max-width: 490px;
+}
+.food__title{
+  font-weight: 700;
+font-size: 54px;
+line-height: 130%;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+font-family: $font;
+} 
+.food_text{
+  font-weight: 400;
+font-size: 20px;
+line-height: 140%;
+color: #FFFFFF;
+max-width: 368px;
+margin-top: 12px;
+margin-bottom: 25px;
+
+}
+.food_buttun{
+  width: 226.93px;
+height: 48px;
+background: #961914;
+border-radius: 8px;
+padding: 13px 40px;
+font-weight: 600;
+font-size: 16px;
+line-height: 140%;
+color: #FFFFFF;
+}
+.sevda{
+  position: relative;
+  z-index: 1;
+}
+
+
+.sevda::before{
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../img/sevda.svg");
+  width: 265px;
+  height: 100px;
+display: inline-block;
+z-index: -1;
+position: absolute;
+left: -18px;
+
+}
+.space{
+  content: "";
+  width: 27px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-image: url("../img/menu.svg");
+  display: none;
+}
+@media screen and (max-width:1020px) {
+  .header-content{
+    display: none;
+  }
+  .space{
+    display: block;
+  }
+}
+
+@media screen and (max-width:810px) {
+  .site-food{
+    background-size: 138px auto, cover;
+  }
+  .food_content{
+    max-width: 390px;
+  }
+  .food__title{
+  font-size: 40px;
+  line-height: 100%;
+  } 
+  .food_text{
+  font-size: 17px;
+  line-height: 100%;
+  
+  }
+
+  .sevda::before{
+    width: 190px;
+    height: 80px;
+    background-size: contain;
+  left: -13px;
+  top: -1px;
+  }
+
+
+}
+
+
+@media screen and (max-width:636px) {
+  .site-food{
+
+  padding: 225px 50px;
+  
+  }
+
+  .site-food{
+    background-size: 100px auto, cover;
+  }
+  
+}
+
+@media screen and (max-width:510px) {
+  .site-food{
+
+  padding: 225px 8px;
+  
+  }
+
+  .site-food{
+    background-size: 90px auto, cover;
+  }
+  
+
+  .food_content{
+    max-width: 260px;
+  }
+  .food__title{
+  font-size: 30px;
+  } 
+  .food_text{
+  font-size: 14px;
+  
+  }
+  .sevda::before{
+    width: 140px;
+    height: 70px;
+    background-size: contain;
+  left: -12px;
+ 
+  }
+  .site-food{
+    background-size: 88px auto, cover;
+  }
+
+}
+

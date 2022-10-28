@@ -1,0 +1,142 @@
+.barf{
+ margin-top: 151px;
+
+}
+
+.barf-title{
+  font-weight: 700;
+font-size: 46px;
+letter-spacing: 0.02em;
+font-family: $font;
+margin-bottom: 32px;
+}
+.barf-text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #434242;
+margin-bottom: 24px;
+}
+.barf-title2{
+  font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+margin-bottom: 16px;
+}
+.barf-content__list{
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #434242;
+margin-bottom: 15px;
+}
+.barf-content__list::before{
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 8px;
+  background-image: url("../img/point.svg");
+}
+
+.barf-box{
+  max-width: 584px;
+}
+.barf__content1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.braf-inner-text::before{
+  content: "";
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 14px;
+  display: inline-block;
+  background-image: url("../img/brf-sevda1.svg");
+}
+.braf-inner-text{
+  margin-right: 16px;
+  width: 190px;
+  margin-bottom: 16px;
+}
+.braf-inner-content{
+  max-width: 508px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.braf-inner-box{
+
+  margin-top: 80px;
+  padding: 32px 77px;
+  background-color: #EAD1D0;
+  margin-bottom: 137px;
+}
+
+.braf-forline{
+  background-image: url("../img/line.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+}
+.brf_img{
+  max-width: 530px;
+}
+
+
+@media screen and (max-width:1150px) {
+  .brf_img{
+    max-width: 430px;
+  }
+
+  .barf-title{
+  font-size: 40px;
+  }
+  .barf-text{
+  font-size: 12px;
+  line-height: 140%;
+  }
+  .barf-title2{
+  font-size: 13px;
+  line-height: 130%;
+  }
+  .barf-content__list{
+  font-size: 12px;
+  line-height: 140%;
+  }
+
+  .barf-box{
+    max-width: 400px;
+  }
+}
+@media screen and (max-width:880px) {
+  .barf__content1{
+    flex-direction: column;
+  }
+  .brf_img{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width:690px) {
+ .braf-forline{
+  flex-direction: column;
+  background-repeat: repeat;
+ }
+ .braf-inner-text{
+  margin: 0 auto;
+  margin-bottom: 16px;
+ }
+ .braf-inner-block2{
+  margin-top: 40px;
+ }
+ .braf-inner-content{
+  flex-direction: column;
+ }
+ .brf_img{
+  max-width: 350px;
+}
+}

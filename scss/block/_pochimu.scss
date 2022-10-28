@@ -1,0 +1,119 @@
+.pochumu{
+  margin-top: 180px;
+}
+.pochimu-content{
+  padding-top: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pochimu-content__title{
+  font-weight: 600;
+font-size: 18px;
+line-height: 130%;
+color: #000000;
+}
+.pochimu-content__list ,
+ .pochimu-content__list2 ,
+ .pochimu-content__list3,
+ .pochimu-content__list4{
+  max-width: 260px;
+ 
+}
+.pochimu-content__text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #000000;
+margin-top: 10px;
+}
+.pochimu-content__list::before{
+  content: "";
+  background-image: url("../img/pochimu__sevda1.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+.pochimu-title::after{
+  content: "";
+  background-image: url("../img/chiziqcha.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+  position: absolute;
+  top: 35px;
+}
+.pochimu-title{
+  font-family: 'Oswald';
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #000000;
+position: relative;
+}
+.pochimu-content__list2::before{
+  content: "";
+  background-image: url("../img/pochimu__sevda2.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+.pochimu-content__list3::before{
+  content: "";
+  background-image: url("../img/pochimu__sevda3.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+.pochimu-content__list4::before{
+  content: "";
+  background-image: url("../img/pochimu__sevda4.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 60px;
+}
+
+@media screen and (max-width:1130px) {
+  .pochimu-content{
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  .pochimu-content__list ,
+ .pochimu-content__list2 ,
+ .pochimu-content__list3,
+ .pochimu-content__list4
+ {
+  margin-bottom: 40px;
+ }
+}
+
+@media screen and (max-width:600px) {
+  .pochimu-content{
+  max-width: 300px;
+  margin: 0 auto;
+  }
+  .pochimu-content__list ,
+ .pochimu-content__list2 ,
+ .pochimu-content__list3,
+ .pochimu-content__list4
+ {
+  margin-bottom: 40px;
+ }
+
+ .pochimu-title::after{
+  width: 40px;
+  height: 60px;
+  top: 35px;
+}
+.pochimu-title{
+  font-size: 40px;
+}
+}
