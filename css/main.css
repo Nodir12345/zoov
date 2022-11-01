@@ -917,6 +917,11 @@ img {
 .site-footer1 {
   background-color: #961914;
   padding: 80px 0;
+  background-image: url("../../img/foofer-line.svg"), url("../../img/footer-line2.svg");
+  background-size: 128px auto, 128px auto;
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
+  z-index: -1;
 }
 
 .footer__conatiner {
@@ -929,6 +934,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .footer__title {
@@ -1167,7 +1173,7 @@ img {
     margin-bottom: 24px;
   }
 }
-@media only screen and (max-width: 825px) {
+@media only screen and (max-width: 1120px) {
   .footer__conatiner,
 .footer-block {
     -webkit-box-orient: vertical;
@@ -1245,5 +1251,118 @@ img {
   }
   .footer-text1 {
     margin: 0 auto;
+  }
+}
+.footer-block {
+  position: relative;
+}
+
+.footer-block::before {
+  content: "";
+  background-image: url("../../img/kuchu.png");
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  left: -200px;
+  top: 10;
+}
+
+.footer-block::after {
+  content: "";
+  background-image: url("../../img/gusht.svg");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  top: 160px;
+  left: -200px;
+}
+
+@media only screen and (max-width: 1290px) {
+  .site-footer1 {
+    background-image: url("../../img/foofer-line.svg"), url("../../img/footer-line2.svg");
+    background-size: 0, 128px auto;
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .site-footer1 {
+    background-image: url("../../img/footer-line3.svg"), url("../../img/footer-line2.svg");
+    background-size: 168px auto, 168px auto;
+    background-repeat: no-repeat;
+    background-position: right bottom, right top;
+    padding-bottom: 200px;
+  }
+  .footer-block::before {
+    content: "";
+    background-image: url("../../img/kuchu.png");
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    left: 314px;
+    top: -395px;
+  }
+  .footer-block::after {
+    content: "";
+    background-image: url("../../img/gusht.svg");
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    top: -246px;
+    left: 348px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .footer-block::before {
+    content: "";
+    width: 79px;
+    height: 78px;
+    left: 16px;
+    top: -454px;
+  }
+  .footer-block::after {
+    content: "";
+    background-image: url("../../img/gusht.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    top: -246px;
+    left: 448px;
+  }
+  .site-footer1 {
+    background-image: url("../../img/footer-line3.svg"), url("../../img/footer-line2.svg");
+    background-size: 128px auto, 128px auto;
+    background-repeat: no-repeat;
+    background-position: right bottom, right top;
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .footer-block::after {
+    content: "";
+    background-image: url("../../img/gusht.svg");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-size: cover;
+    position: absolute;
+    top: -246px;
+    left: 378px;
   }
 }/*# sourceMappingURL=main.css.map */
